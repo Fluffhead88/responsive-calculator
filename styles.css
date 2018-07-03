@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+/* font from google fonts */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 100%;
+}
