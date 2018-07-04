@@ -3,26 +3,69 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Color Clock</title>
+  <title>Calculator</title>
   <link rel="stylesheet" href="normalize.css">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="row justify-content-center">
+    <div id="display" class="row">
+      <div class="col-md">0</div>
+    </div>
 
-      <div class="col-6">
-        <div id="calculator">
-
-        </div>
-
+    <div id="operators" class="row">
+      <div class="col-md">
+        <button class="cl btn" value="C">C</button>
+        <button class="op btn" value="+/-">+/-</button>
+        <button class="op btn" value="%">%</button>
+        <button class="op btn" value="÷">÷</button>
       </div>
+    </div>
 
+    <div id="7" class="row">
+      <div class="col-md">
+        <button class="num btn" value="7">7</button>
+        <button class="num btn" value="8">8</button>
+        <button class="num btn" value="9">9</button>
+        <button class="op btn" value="X">X</button>
+      </div>
+    </div>
+
+    <div id="4" class="row">
+      <div class="col-md">
+        <button class="num btn" value="4">4</button>
+        <button class="num btn" value="5">5</button>
+        <button class="num btn" value="6">6</button>
+        <button class="op btn" value="-">-</button>
+      </div>
+    </div>
+
+    <div id="1" class="row">
+      <div class="col-md">
+        <button class="num btn" value="1">1</button>
+        <button class="num btn" value="2">2</button>
+        <button class="num btn" value="3">3</button>
+        <button class="op btn" value="+">+</button>
+      </div>
+    </div>
+
+    <div id="0" class="row">
+      <div class="col-md">
+        <button class="num btn" value="0">0</button>
+        <button class="dec btn" value=".">.</button>
+        <button class="eq btn" value="=">=</button>
+      </div>
     </div>
   </div>
+
+
+
+
+
+
   <script src="main.js"></script>
 </body>
 

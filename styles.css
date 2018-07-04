@@ -6,8 +6,30 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #F66733
 }
 
 img {
   width: 100%;
+}
+
+.container {
+  margin-top: 11%;
+  margin-left: 45%;
+}
+
+#display {
+  color: #522D80;
+  margin-left: 19%;
+  font-size: 24pt;
+  padding: 5pt;
+}
+
+.btn {
+  border: solid 2pt #522D80;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 1px;
+  color: #522D80;
+  width: 50px;
 }
