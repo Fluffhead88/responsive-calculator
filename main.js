@@ -37,11 +37,11 @@ function calculate() {
   // var operators
   for (var i = 0; i < calculation.length; i++) {
     if (operators.indexOf(calculation[i]) === -1 && op.length > 0) {
-      num_1 += calculation[i];
+      num_2 += calculation[i];
     } else if (operators.indexOf(calculation[i]) !== -1) {
       op = calculation[i];
     } else {
-      num_2 += calculation[i];
+      num_1 += calculation[i];
     }
     // document.getElementById("display").textContent = number
   }
