@@ -33,6 +33,7 @@ document.querySelectorAll(".eq").forEach(element => {
 // function to replace display in html with button that is clicked
 function calculate() {
   var operators = ["+", "-", "/", "*"];
+  var result;
   // var operators
   for (var i = 0; i < calculation.length; i++) {
     if (operators.indexOf(calculation[i]) === -1 && op.length > 0) {
@@ -42,17 +43,25 @@ function calculate() {
     } else {
       num_2 += calculation[i];
     }
-
-
-    if (op === "+") {
-      return x + y;
-    };
-
-    var ans = Number(num_1)(op) Number(num_2);
-    console.log(ans);
-
     // document.getElementById("display").textContent = number
   }
+
+  if (op === "+") {
+    result = Number(num_1) + Number(num_2);
+  };
+  if (op === "-") {
+    result = Number(num_1) - Number(num_2);
+  };
+  if (op === "*") {
+    result = Number(num_1) * Number(num_2);
+  };
+  if (op === "/") {
+    result = Number(num_1) / Number(num_2);
+  };
+
+  console.log(result);
+  document.getElementById("display").textContent = result;
 }
+
 // selects equal clicked and uses function above to put them in place of
 // display in html
