@@ -1,3 +1,6 @@
+var calculation = [];
+var number = "";
+
 // function to replace display in html with button that is clicked
 
 function myFunction(x) {
@@ -10,3 +13,9 @@ function myFunction(x) {
 document.querySelectorAll(".btn").forEach(element => {
   element.addEventListener('click', myFunction);
 })
+
+
+function pushNumber() {
+  calculation.push(Number(number));
+  number = "";
+}
